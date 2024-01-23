@@ -119,7 +119,7 @@ const handleClickQuestion = (index, event) => {
       <div class="overlay" @click="isOpenModal = !isOpenModal"></div>
       <div class="container-main">
         <template v-for="(question, index) in questionList">
-          <div v-if="questionCurrent == index" class="img-question">
+          <div v-show="questionCurrent == index" class="img-question">
             <img :src="question.imgSrc" alt="" srcset="" />
           </div>
         </template>
@@ -213,7 +213,6 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #eba351;
-  /* border: 1px solid black; */
   transition: all 0.3s ease;
   border-right: 2px solid rgb(0, 0, 0);
   border-bottom: 2px solid rgb(0, 0, 0);
