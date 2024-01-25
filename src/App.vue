@@ -4,45 +4,45 @@ import TheWelcome from "./components/TheWelcome.vue";
 import { ref } from "vue";
 
 const questionList = ref([
-  {
+{
     status: "pending",
     imgSrc:
-      "https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?cs=srgb&dl=pexels-jovana-nesic-593655.jpg&fm=jpg",
+      "https://github.com/ntg552000/image-yep/blob/main/mini1.jpg?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvkIeHNGKmOJa4u8D91rJm2qCCU_y49kOr1zkxpU0sQ&s",
+      "https://github.com/ntg552000/image-yep/blob/main/mini2.jpg?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2eafsWmwN3TdoWbpUsb-2xtE2jl_qcTSYBVaMdumt6g&s",
+      "https://github.com/ntg552000/image-yep/blob/main/mini3.jpg?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://lh3.googleusercontent.com/proxy/7v4jrhphB5j_n7A9AAxQPk5gdVp-kawPq2lzWV_CuZqJNVIAOkdMSPHJF5Na22xmkrGt9jU4chs1va8-xRf4qDwgtg99B5f4d_ER",
+      "https://github.com/ntg552000/image-yep/blob/main/mini4.jpg?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://lh3.googleusercontent.com/proxy/7v4jrhphB5j_n7A9AAxQPk5gdVp-kawPq2lzWV_CuZqJNVIAOkdMSPHJF5Na22xmkrGt9jU4chs1va8-xRf4qDwgtg99B5f4d_ER",
+      "https://github.com/ntg552000/image-yep/blob/main/mini5.jpg?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://lh3.googleusercontent.com/proxy/7v4jrhphB5j_n7A9AAxQPk5gdVp-kawPq2lzWV_CuZqJNVIAOkdMSPHJF5Na22xmkrGt9jU4chs1va8-xRf4qDwgtg99B5f4d_ER",
+      "https://github.com/ntg552000/image-yep/blob/main/mini6.jpg?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://lh3.googleusercontent.com/proxy/7v4jrhphB5j_n7A9AAxQPk5gdVp-kawPq2lzWV_CuZqJNVIAOkdMSPHJF5Na22xmkrGt9jU4chs1va8-xRf4qDwgtg99B5f4d_ER",
+      "https://github.com/ntg552000/image-yep/blob/main/mini10.png?raw=true",
   },
   {
     status: "pending",
     imgSrc:
-      "https://lh3.googleusercontent.com/proxy/7v4jrhphB5j_n7A9AAxQPk5gdVp-kawPq2lzWV_CuZqJNVIAOkdMSPHJF5Na22xmkrGt9jU4chs1va8-xRf4qDwgtg99B5f4d_ER",
+      "https://github.com/ntg552000/image-yep/blob/main/mini8.JPG?raw=true",
   },
   // {
   //   status: 'pending',
@@ -120,7 +120,7 @@ const handleClickQuestion = (index, event) => {
       <div class="container-main">
         <template v-for="(question, index) in questionList">
           <div v-show="questionCurrent == index" class="img-question">
-            <img :src="question.imgSrc" alt="" srcset="" />
+            <img :src="question.imgSrc" alt="" srcset="" loading="lazy" />
           </div>
         </template>
         <div class="btn-wrap">
@@ -167,7 +167,7 @@ h1 {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-image: url("./image/background1.png");
+  background-image: url("./image/Minigame.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -185,7 +185,7 @@ h1 {
 .content-left {
   position: absolute;
 
-  background-image: url("./image/a.jpg");
+  background-image: url("./image/mini7.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   transition: all 0.5s ease;
@@ -194,8 +194,8 @@ h1 {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   left: 23.1%;
   right: 25.2%;
-  top: 24.0%;
-  bottom: 10.8%;
+  top: 25.0%;
+  bottom: 10%;
   background-size: 100% 100%;
 
   display: grid;
@@ -286,14 +286,14 @@ button:hover {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgb(37, 165, 33);
+  background-color: rgb(216, 148, 21);
   border: none;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 68px;
+  width: 180px;
+  height: 55px;
   font-size: 32px;
   border-radius: 10px;
 }
